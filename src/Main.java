@@ -47,4 +47,9 @@ public class Main extends JFrame{
         ChooseIDentity chooseIDentity = new ChooseIDentity(this);
         chooseIDentity.setVisible(true);
     }
+
+    public void setBookPage(Catalog catalog, String username, String bookId) {
+        catalog.setVisible(false);
+
+    }
 }

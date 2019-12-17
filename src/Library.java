@@ -42,6 +42,10 @@ public class Library {
         return booksManager.getBook(bookId);
     }
 
+    ArrayList<Book> getBooksByKeyword(String name){
+        return booksManager.getBookByKey(name);
+    }
+
     /* get list of users */
     ArrayList<User> getUsers(){
         return usersManager.getUsers();

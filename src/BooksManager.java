@@ -28,4 +28,14 @@ public class BooksManager {
     ArrayList<Book> getBooks(){
         return books;
     }
+
+    public ArrayList<Book> getBookByKey(String key) {
+        ArrayList<Book> books = new ArrayList<>();
+        for (Book book: books){
+            if (book.getAuthor().contains(key)| book.getBookName().contains(key)){
+                books.add(book);
+            }
+        }
+        return books;
+    }
 }
