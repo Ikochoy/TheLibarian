@@ -33,5 +33,11 @@ public class UserSignUp extends JFrame {
                 }
             }
         });
+        HOMEButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                main.setHomePage(UserSignUp.this);
+            }
+        });
     }
 }

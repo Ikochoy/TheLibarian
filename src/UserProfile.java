@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class UserProfile extends JFrame{
     private JTextField textField1;
@@ -15,7 +17,12 @@ public class UserProfile extends JFrame{
     UserProfile(Main main, String username){
         add(root);
         setSize(400, 300);
-
+        LOGOUTButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                main.setHomePage(UserProfile.this);
+            }
+        });
     }
 
 

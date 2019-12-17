@@ -28,5 +28,11 @@ public class UserFirstPage extends JFrame {
                 main.setUserSignUpPage(UserFirstPage.this);
             }
         });
+        HOMEButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                main.setHomePage(UserFirstPage.this);
+            }
+        });
     }
 }

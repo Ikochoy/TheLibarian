@@ -41,4 +41,10 @@ public class Main extends JFrame{
         UserProfile userProfile = new UserProfile(this, username);
         userProfile.setVisible(true);
     }
+
+    public void setHomePage(JFrame jframe) {
+        jframe.setVisible(false);
+        ChooseIDentity chooseIDentity = new ChooseIDentity(this);
+        chooseIDentity.setVisible(true);
+    }
 }
