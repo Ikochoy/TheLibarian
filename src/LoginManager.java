@@ -5,10 +5,10 @@ public class LoginManager {
     String USERNAME_INVALID = "Username is invalid";
     String PASSWORD_INVALID = "Password is invalid";
 
-    private UsersManager usersManager = new UsersManager();
+    private Library library = new Library();
 
     String validate(String username, String password){
-        User user = usersManager.getUserByUsername(username);
+        User user = library.getUserByUserName(username);
         if(user == null){
             return USERNAME_INVALID;
         }else if(user.getPassword().equals(password)){

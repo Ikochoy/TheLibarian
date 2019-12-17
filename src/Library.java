@@ -33,7 +33,7 @@ public class Library {
 
     /* get a user by userID
      */
-    User getUserByUserId(String username){
+    User getUserByUserName(String username){
         return usersManager.getUserByUsername(username);
     }
     /* get book by bookId
