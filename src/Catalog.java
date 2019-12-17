@@ -11,10 +11,12 @@ public class Catalog extends JFrame{
     private JTable table1;
     private JTextField searchBookByBookTextField;
     private JButton searchButton;
+    private JButton backButton;
     private Library library = new Library();
 
     Catalog(Main main, String username){
         add(panel1);
+        setSize(400,400);
         String[] columnNames = {"BookId", "Book Name", "Book Author"};
         DefaultTableModel tableModel = new DefaultTableModel();
         tableModel.setColumnIdentifiers(columnNames);
@@ -43,6 +45,13 @@ public class Catalog extends JFrame{
                     String bookId = (String) table1.getModel().getValueAt(row, 0);
                     main.setBookPage(Catalog.this, username, bookId);
                 }
+            }
+        });
+
+        backButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                main.setProfilePage(Catalog.this, username);
             }
         });
 

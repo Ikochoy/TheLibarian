@@ -9,6 +9,7 @@ public class UserLogin extends JFrame{
     private JPanel root;
     private JLabel Error;
     private JButton HOMEButton;
+    private JButton previousButton;
     private LoginManager loginManager;
 
     UserLogin(Main main){
@@ -33,6 +34,12 @@ public class UserLogin extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 main.setHomePage(UserLogin.this);
+            }
+        });
+        previousButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                main.setUserFirstPage(UserLogin.this);
             }
         });
     }

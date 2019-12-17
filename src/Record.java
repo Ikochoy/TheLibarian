@@ -85,9 +85,25 @@ public class Record {
         return book.getBookId();
     }
 
+    String getBookName(){
+        return book.getBookName();
+    }
+
     void setReturned() {
         isReturned = true;
         this.book.returnItem();
+    }
+
+    public LocalDate getBorrowDate() {
+        return borrowDate;
+    }
+
+    public LocalDate getReturnDate() {
+        return returnDate;
+    }
+
+    public boolean isExtended(){
+        return returnDateExtender.getIsExtended();
     }
 
     @Override
