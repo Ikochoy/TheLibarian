@@ -9,7 +9,6 @@ public class UserLogin extends JFrame{
     private JPanel root;
     private JLabel Error;
     private JButton HOMEButton;
-    private JButton BACKButton;
     private LoginManager loginManager;
 
     UserLogin(Main main){
