@@ -8,8 +8,11 @@ public class ReturnBook extends JFrame{
     private JButton returnBookButton;
     private JLabel error;
     private JButton adminHOMEButton;
+    private JPanel root;
 
     public ReturnBook(Main main) {
+        add(root);
+        setSize(400, 300);
         Library library = new Library();
         String bookId = textField2.getText();
         String username = textField1.getText();

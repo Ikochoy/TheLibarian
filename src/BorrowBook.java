@@ -7,6 +7,7 @@ public class BorrowBook extends JFrame{
     private JTextField textField2;
     private JButton borrowButton;
     private JButton adminHOMEButton;
+    private JPanel root;
 
     public BorrowBook(Main main) {
         String username = textField1.getText();

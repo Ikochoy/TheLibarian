@@ -64,7 +64,7 @@ public class Record {
     }
 
     // Mark a book borrowing record to be late
-    private void setRecordLate(){
+    void setRecordLate(){
         lateRecordsManager.setLate();
     }
 
@@ -87,11 +87,6 @@ public class Record {
 
     String getBookName(){
         return book.getBookName();
-    }
-
-    void setReturned() {
-        isReturned = true;
-        this.book.returnItem();
     }
 
     public LocalDate getBorrowDate() {

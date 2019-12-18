@@ -7,8 +7,11 @@ public class DeleteBook extends JFrame{
     private JButton delButton;
     private JButton adminHOMEButton;
     private JLabel ERROR;
+    private JPanel root;
 
     public DeleteBook(Main main) {
+        add(root);
+        setSize(400, 400);
         String bookId = textField1.getText();
         Library library = new Library();
         delButton.addActionListener(new ActionListener() {

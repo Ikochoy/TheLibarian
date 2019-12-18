@@ -64,4 +64,14 @@ public class AdultUser implements User {
     public String getUserId() {
         return userAccountManager.getUserId();
     }
+
+    @Override
+    public ArrayList<Record> getLateRecords() {
+        return userBorrowHistoryManager.getLateRecords();
+    }
+
+    @Override
+    public ArrayList<Record> getUnreturnedRecords() {
+        return userBorrowHistoryManager.getUnreturnedRecords();
+    }
 }

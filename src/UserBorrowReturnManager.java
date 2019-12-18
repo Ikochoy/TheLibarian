@@ -15,8 +15,8 @@ public class UserBorrowReturnManager {
     void returnBook(String bookId) throws BookNotBorrowedException{
         Record record = userBorrowHistoryManager.getRecordByBookId(bookId);
         if (record != null){
-            record.setReturned();
-        } else{
+           record.bookReturn();
+        }else{
             throw new BookNotBorrowedException("Record shows that you didn't borrow this book!");
         }
     }

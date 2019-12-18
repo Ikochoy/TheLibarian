@@ -7,8 +7,11 @@ public class AddBook extends JFrame {
     private JTextField textField1;
     private JTextField textField2;
     private JButton adminHOMEButton;
+    private JPanel root;
 
     public AddBook(Main main) {
+        add(root);
+        setSize(400,300);
         String bookName = textField1.getText();
         String bookAuthor = textField2.getText();
         Library library = new Library();

@@ -45,4 +45,24 @@ public class UserBorrowHistoryManager {
         }
         return count;
     }
+
+    ArrayList<Record> getLateRecords(){
+        ArrayList<Record> late = new ArrayList<>();
+        for(Record record: borrowHistory){
+            if(record.isLate()){
+                late.add(record);
+            }
+        }
+        return late;
+    }
+
+    ArrayList<Record> getUnreturnedRecords(){
+        ArrayList<Record> unreturned = new ArrayList<>();
+        for( Record record: borrowHistory){
+            if(!record.isReturned()){
+                unreturned.add(record);
+            }
+        }
+        return unreturned;
+    }
 }
