@@ -20,6 +20,12 @@ public class ChooseIDentity extends JFrame{
                 main.setUserFirstPage(ChooseIDentity.this);
             }
         });
+        adminButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                main.setAdminFirstPage(ChooseIDentity.this);
+            }
+        });
 
     }
 }

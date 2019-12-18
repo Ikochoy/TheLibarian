@@ -1,5 +1,6 @@
 import javafx.beans.InvalidationListener;
 
+import java.util.ArrayList;
 import java.util.Observable;
 
 /*
@@ -61,6 +62,14 @@ public class Book implements Item{
 
     public int getNoCopies(){
         return bookInventoryManager.getNoCopies();
+    }
+
+    public void increaseCopy(){
+        bookInventoryManager.incrementCopies();
+    }
+
+    public void decreaseCopy(){
+        bookInventoryManager.decrementCopies();
     }
 
 }

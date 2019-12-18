@@ -54,4 +54,11 @@ public class Library {
     ArrayList<Book> getBooks(){
         return booksManager.getBooks();
     }
+
+    /* get size of the list of the books */
+    int getBooksLength(){return booksManager.getBooks().size();}
+
+    public Book getBookByInfo(String bookName, String bookAuthor) {
+        return booksManager.getBookByInfo(bookName, bookAuthor);
+    }
 }

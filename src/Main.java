@@ -82,4 +82,39 @@ public class Main extends JFrame{
         unreturnedBooks.setLocationRelativeTo(null);
         unreturnedBooks.setVisible(true);
     }
+
+    public void setAdminFirstPage(JFrame chooseIDentity) {
+        chooseIDentity.setVisible(false);
+        AdminHomePage adminHomePage = new AdminHomePage(this);
+        adminHomePage.setLocationRelativeTo(null);
+        adminHomePage.setVisible(true);
+    }
+
+    public void setBorrowPage(JFrame adminHomePage) {
+        adminHomePage.setVisible(false);
+        BorrowBook borrowBook = new BorrowBook(this);
+        borrowBook.setLocationRelativeTo(null);
+        borrowBook.setVisible(true);
+    }
+
+    public void setReturnPage(JFrame adminHomePage) {
+        adminHomePage.setVisible(false);
+        ReturnBook returnBook = new ReturnBook(this);
+        returnBook.setLocationRelativeTo(null);
+        returnBook.setVisible(true);
+    }
+
+    public void setDeleteBookPage(JFrame adminHomePage) {
+        adminHomePage.setVisible(false);
+        DeleteBook deleteBook = new DeleteBook(this);
+        deleteBook.setLocationRelativeTo(null);
+        deleteBook.setVisible(true);
+    }
+
+    public void setAddBookPage(JFrame adminHomePage) {
+        adminHomePage.setVisible(false);
+        AddBook addBook = new AddBook(this);
+        addBook.setLocationRelativeTo(null);
+        addBook.setVisible(true);
+    }
 }
