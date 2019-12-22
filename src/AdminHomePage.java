@@ -9,6 +9,7 @@ public class AdminHomePage extends JFrame{
     private JButton addANewBookButton;
     private JPanel root;
     private JButton HOMEButton;
+    private JButton checkUserButton;
 
 
     public AdminHomePage(Main main) {
