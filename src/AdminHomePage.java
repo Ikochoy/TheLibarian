@@ -45,5 +45,11 @@ public class AdminHomePage extends JFrame{
                 main.setCheckUserPage(AdminHomePage.this);
             }
         });
+        extendRecordButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                main.setExtendRecordPage(AdminHomePage.this);
+            }
+        });
     }
 }

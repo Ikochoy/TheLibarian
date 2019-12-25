@@ -8,6 +8,8 @@ public class ExtendRecord extends JFrame{
     private JTextField textField2;
     private JButton setExtendedButton;
     private JLabel warningMessage;
+    private JButton ADMINHOMEButton;
+
     ExtendRecord(Main main){
         add(root);
         setSize(500, 500);
@@ -26,6 +28,12 @@ public class ExtendRecord extends JFrame{
                     warningMessage.setText("Return Date extended successfully");
                 }
 
+            }
+        });
+        ADMINHOMEButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                main.setAdminFirstPage(ExtendRecord.this);
             }
         });
     }

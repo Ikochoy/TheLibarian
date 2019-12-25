@@ -118,4 +118,11 @@ public class Main extends JFrame{
         checkUser.setLocationRelativeTo(null);
         checkUser.setVisible(true);
     }
+
+    public void setExtendRecordPage(JFrame adminHomePage) {
+        adminHomePage.setVisible(false);
+        ExtendRecord extendRecord = new ExtendRecord(this);
+        extendRecord.setLocationRelativeTo(null);
+        extendRecord.setVisible(true);
+    }
 }
