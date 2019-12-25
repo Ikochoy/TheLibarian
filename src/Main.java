@@ -104,12 +104,6 @@ public class Main extends JFrame{
         returnBook.setVisible(true);
     }
 
-    public void setDeleteBookPage(JFrame adminHomePage) {
-        adminHomePage.setVisible(false);
-        DeleteBook deleteBook = new DeleteBook(this);
-        deleteBook.setLocationRelativeTo(null);
-        deleteBook.setVisible(true);
-    }
 
     public void setAddBookPage(JFrame adminHomePage) {
         adminHomePage.setVisible(false);
@@ -118,6 +112,10 @@ public class Main extends JFrame{
         addBook.setVisible(true);
     }
 
-    public void setCheckUserPage(AdminHomePage adminHomePage) {
+    public void setCheckUserPage(JFrame adminHomePage) {
+        adminHomePage.setVisible(false);
+        CheckUser checkUser= new CheckUser(this);
+        checkUser.setLocationRelativeTo(null);
+        checkUser.setVisible(true);
     }
 }

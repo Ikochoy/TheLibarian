@@ -76,4 +76,9 @@ public class AdultUser implements User {
     public ArrayList<Record> getUnreturnedRecords() {
         return userBorrowHistoryManager.getUnreturnedRecords();
     }
+
+    @Override
+    public Record getRecordByBookName(String bookName) {
+        return userBorrowHistoryManager.getBookByName(bookName);
+    }
 }

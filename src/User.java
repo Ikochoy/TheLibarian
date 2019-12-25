@@ -14,4 +14,5 @@ public interface User {
     String getUserId();
     ArrayList<Record> getLateRecords();
     ArrayList<Record> getUnreturnedRecords();
+    Record getRecordByBookName(String bookName);
 }

@@ -65,4 +65,13 @@ public class UserBorrowHistoryManager {
         }
         return unreturned;
     }
+
+    Record getBookByName(String bookName){
+        for (Record record: borrowHistory){
+            if (record.getBookId().equals(bookName)){
+                return record;
+            }
+        }
+        return null;
+    }
 }
