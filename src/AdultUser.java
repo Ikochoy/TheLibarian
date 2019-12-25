@@ -4,6 +4,7 @@ public class AdultUser implements User {
     private UserAccountManager userAccountManager;
     private UserBorrowHistoryManager userBorrowHistoryManager;
     private UserBorrowReturnManager userBorrowReturnManager;
+    private static String status = "Adult";
 
     AdultUser(String userName, String password, String userId){
         userAccountManager = new UserAccountManager(userName, password, userId);
@@ -15,6 +16,7 @@ public class AdultUser implements User {
     public int getNumUnreturnedRecords() {
         return userBorrowHistoryManager.getNumBooksNotReturned();
     }
+
 
     @Override
     public int getNumLateRecords() {

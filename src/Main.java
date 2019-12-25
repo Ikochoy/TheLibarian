@@ -117,4 +117,7 @@ public class Main extends JFrame{
         addBook.setLocationRelativeTo(null);
         addBook.setVisible(true);
     }
+
+    public void setCheckUserPage(AdminHomePage adminHomePage) {
+    }
 }

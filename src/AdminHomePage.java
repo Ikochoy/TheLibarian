@@ -5,7 +5,6 @@ import java.awt.event.ActionListener;
 public class AdminHomePage extends JFrame{
     private JButton borrowBookButton;
     private JButton returnABookButton;
-    private JButton deleteABookButton;
     private JButton addANewBookButton;
     private JPanel root;
     private JButton HOMEButton;
@@ -27,12 +26,6 @@ public class AdminHomePage extends JFrame{
                 main.setReturnPage(AdminHomePage.this);
             }
         });
-        deleteABookButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                main.setDeleteBookPage(AdminHomePage.this);
-            }
-        });
         addANewBookButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -43,6 +36,12 @@ public class AdminHomePage extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 main.setHomePage(AdminHomePage.this);
+            }
+        });
+        checkUserButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                main.setCheckUserPage(AdminHomePage.this);
             }
         });
     }

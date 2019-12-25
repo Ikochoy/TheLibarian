@@ -7,15 +7,6 @@ public class BooksManager {
         books.add(book);
     }
 
-    void deleteBook(String bookId) throws BookNotExistException{
-        Book book = getBook(bookId);
-        if (book != null){
-            books.remove(book);
-        }else{
-            throw new BookNotExistException("This book does not exist in record");
-        }
-    }
-
     Book getBook(String bookId){
         for (Book book: books){
             if (book.getBookId().equals(bookId)){
@@ -47,4 +38,5 @@ public class BooksManager {
         }
         return null;
     }
+
 }

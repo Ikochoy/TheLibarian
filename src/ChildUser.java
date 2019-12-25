@@ -4,6 +4,8 @@ public class ChildUser implements User {
     private UserAccountManager userAccountManager;
     private UserBorrowHistoryManager userBorrowHistoryManager;
     private UserBorrowReturnManager userBorrowReturnManager;
+    private static String status = "Child";
+
 
     public ChildUser(String userName, String password, String userid) {
         userAccountManager = new UserAccountManager(userName, password, userid);

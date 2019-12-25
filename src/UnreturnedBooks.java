@@ -15,7 +15,7 @@ public class UnreturnedBooks extends JFrame{
         setSize(400, 400);
         Library library = new Library();
         User user = library.getUserByUserName(username);
-        number.setText(Integer.toString(user.getNumLateRecords()));
+        number.setText(Integer.toString(user.getNumUnreturnedRecords()));
         String[] col = {"Book Name", "Borrow Date", "Return Date", "Is Returned", "Is Extended", "is Late"};
         ArrayList<Record> unreturnedRecords = library.getUserByUserName(username).getUnreturnedRecords();
         DefaultTableModel tableModel = new DefaultTableModel();

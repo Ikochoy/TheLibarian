@@ -103,8 +103,8 @@ public class Record {
 
     @Override
     public String toString() {
-        return "Book Name: "+ book.getBookName()+", BookId: "+book.getBookId() +", Borrow Date: "+ borrowDate+
-                ", Return Date: "+ returnDate + ", Returned: " + isReturned + ", Extended: "+ returnDateExtender.getIsExtended()
-                + ", Late: "+isLate();
+        return "Book Name- "+ book.getBookName()+"; BookId- "+book.getBookId() +"; Borrow Date- "+ borrowDate+
+                "; Return Date- "+ returnDate + "; Returned- " + isReturned + "; Extended- "+ returnDateExtender.getIsExtended()
+                + "; Late- "+isLate();
     }
 }
